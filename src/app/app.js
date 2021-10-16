@@ -13,9 +13,9 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    componentDidMount(){
-        this.fetchTasks();
-    }
+    // componentDidMount(){
+    //     this.fetchTasks();
+    // }
 
     addTask(e) {        
         if (this.state._id){
@@ -94,6 +94,7 @@ class App extends Component {
                 this.setState({tasks: data});
                 console.log(this.state.tasks);
             })
+            .catch(err => console.error(err));
     }
 
     handleChange(e) {        
