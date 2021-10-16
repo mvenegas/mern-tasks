@@ -15,6 +15,7 @@ class App extends Component {
 
     componentDidMount(){
         this.fetchTasks();
+        console.log('Componente montado');
     }
 
     addTask(e) {        
