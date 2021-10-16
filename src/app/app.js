@@ -13,9 +13,9 @@ class App extends Component {
         this.handleChange = this.handleChange.bind(this);
     }
 
-    // componentDidMount(){
-    //     this.fetchTasks();
-    // }
+    componentDidMount(){
+        this.fetchTasks();
+    }
 
     addTask(e) {        
         if (this.state._id){
