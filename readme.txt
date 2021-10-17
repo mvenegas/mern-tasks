@@ -1,6 +1,9 @@
 Tecnologías usadas
 
 MERN (Mongodb, Express, React, Node)
+Materialize CSS
+Heroku (Hosting para Nodejs)
+MongoDB Atlas (para servidor Mongo)
 
 
 pasos para crear el proyecto
@@ -18,9 +21,20 @@ pasos para crear el proyecto
 
 
 Para desplegar la aplicación usaremos:
-Heroku (como hosting de app Nodejs, por cierto Heroku permite subir aplicaciones desarrolladas en node, java, go, etc)
-mLab
+Heroku (como hosting de app Nodejs, por cierto Heroku permite subir aplicaciones desarrolladas en node, java, go, phyton, etc)
+mLab (para nuestro servidor de Mongodb), usaremos MongoDB Atlas
 
+Pasos para realizar el desplieque
+1.- crear cuentas en Heroku y mLab respectivamente
+2.- para desplegar en heroku, primero instalar el programa y una vez terminado de instalar en una consola escribir heroku login, ingresar credenciales
+3.- 
+
+//Acceso Mongodb
+mongodb+srv://mvenegas:lapdmvs1@cluster0.cafgg.mongodb.net/mern-tasks
+
+
+//URL en heroku donde se hosting la app web
+https://mern-taskjs.herokuapp.com/
 
 para ir probando la app web
 nodemon src/index.js

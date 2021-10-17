@@ -15,10 +15,21 @@ class App extends Component {
 
     componentDidMount(){
         this.fetchTasks();
-        console.log('Componente montado');
     }
 
     addTask(e) {        
+        e.preventDefault();
+
+        if (this.state.title == ''){
+            alert('enter title');
+            return;
+        }
+
+        if (this.state.description == ''){
+            alert('enter description');
+            return;
+        }
+
         if (this.state._id){
             fetch(`api/task/${this.state._id}`, {
                 method: 'PUT',
@@ -45,15 +56,15 @@ class App extends Component {
             })
                 .then(res=> res.json())
                 .then(data => {
-                    console.log(data)
+                    //console.log(data)
                     M.toast({html: 'Task saved'});
                     this.setState({title: '', description: ''})
                     this.fetchTasks();
                 })
                 .catch(err => console.error(err));
         }  
-
-        e.preventDefault();
+        
+        //e.preventDefault();
     }
 
     deleteTask(id){
@@ -78,7 +89,7 @@ class App extends Component {
             .then(res => res.json())
             .then(data => {
                 //this.setState({tasks: data});
-                console.log(data);
+                //console.log(data);
                 this.setState(
                     {
                         title: data.title,
@@ -93,7 +104,7 @@ class App extends Component {
             .then(res => res.json())
             .then(data => {
                 this.setState({tasks: data});
-                console.log(this.state.tasks);
+                //console.log(this.state.tasks);
             })
             .catch(err => console.error(err));
     }
