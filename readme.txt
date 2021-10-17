@@ -1,9 +1,11 @@
 Tecnologías usadas
 
 MERN (Mongodb, Express, React, Node)
+
 Materialize CSS
 Heroku (Hosting para Nodejs)
 MongoDB Atlas (para servidor Mongo)
+Tools development: Webpack, @babel
 
 
 pasos para crear el proyecto
