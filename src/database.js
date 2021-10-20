@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 //const URI='mongodb://localhost/mern-tasks';
 
 //cadena MongoDB Atlas
-const URI='mongodb+srv://mvenegas:lapdmvs1@cluster0.cafgg.mongodb.net/mern-tasks';
+const URI='mongodb+srv://<user>:<password>@cluster0.cafgg.mongodb.net/mern-tasks';
 
 mongoose.connect(URI)
     .then(db => console.log('DB is connected'))
