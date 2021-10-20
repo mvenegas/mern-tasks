@@ -28,8 +28,10 @@ mLab (para nuestro servidor de Mongodb), usaremos MongoDB Atlas
 
 Pasos para realizar el desplieque
 1.- crear cuentas en Heroku y mLab respectivamente
-2.- para desplegar en heroku, primero instalar el programa y una vez terminado de instalar en una consola escribir heroku login, ingresar credenciales
-3.- 
+2.- vía git realizar el git add . y luego git commit -m "mensaje"
+3.- para desplegar en heroku, primero instalar el programa y una vez terminado de instalar en una consola escribir heroku login, ingresar credenciales
+4.- git push heroku master
+5.- heroku open
 
 //Acceso Mongodb
 mongodb+srv://mvenegas:lapdmvs1@cluster0.cafgg.mongodb.net/mern-tasks

@@ -17,7 +17,7 @@ class App extends Component {
         this.fetchTasks();
     }
 
-    addTask(e) {        
+    addTask (e) {         
         e.preventDefault();
 
         if (this.state.title == ''){
