@@ -21,12 +21,12 @@ class App extends Component {
         e.preventDefault();
 
         if (this.state.title == ''){
-            alert('enter title');
+            alert('enter name');
             return;
         }
 
         if (this.state.description == ''){
-            alert('enter description');
+            alert('enter Phone number');
             return;
         }
 
@@ -41,7 +41,7 @@ class App extends Component {
             })
             .then(res => res.json())
             .then(data => {
-                M.toast({html: 'Task Updated'});
+                M.toast({html: 'Contact Updated'});
                 this.setState({title: '', description: '', _id: ''});
                 this.fetchTasks();
             })
@@ -57,7 +57,7 @@ class App extends Component {
                 .then(res=> res.json())
                 .then(data => {
                     //console.log(data)
-                    M.toast({html: 'Task saved'});
+                    M.toast({html: 'Contact saved'});
                     this.setState({title: '', description: ''})
                     this.fetchTasks();
                 })
@@ -78,7 +78,7 @@ class App extends Component {
             })
             .then(res => res.json())
             .then(data => {
-                M.toast({html: 'Task deleted'});
+                M.toast({html: 'Contact deleted'});
                 this.fetchTasks();
             })
         }
@@ -123,7 +123,7 @@ class App extends Component {
                 {/* TODO: Luego cambiar por rutas */}
                 <nav className="light-blue darken-4">
                     <div className="container">
-                        <a className="brand-logo" href="/">MERN-Stack</a>                        
+                        <a className="brand-logo" href="/">MERN-Contact list</a>                        
                     </div>
                 </nav>
 
@@ -135,12 +135,12 @@ class App extends Component {
                                     <form onSubmit={this.addTask}>
                                         <div className="row">
                                             <div className="input-file col s12">
-                                                <input type="text" name="title" placeholder="Task Title" onChange={this.handleChange} value={this.state.title} />
+                                                <input type="text" name="title" placeholder="Name" onChange={this.handleChange} value={this.state.title} />
                                             </div>
                                         </div>
                                         <div className="row">
                                             <div className="input-file col s12">
-                                                <textarea name="description" placeholder="Task Description" className="materialize-textarea" onChange={this.handleChange} value={this.state.description}></textarea>
+                                                <textarea name="description" placeholder="Phone number" className="materialize-textarea" onChange={this.handleChange} value={this.state.description}></textarea>
                                             </div>
                                         </div>
                                         <button type="submit" className="btn light-blue darken-4">Send</button>
@@ -152,8 +152,8 @@ class App extends Component {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Title</th>
-                                        <th>Description</th>
+                                        <th>Name</th>
+                                        <th>Phone number</th>
                                     </tr>
                                 </thead>
                                 <tbody>
