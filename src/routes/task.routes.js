@@ -9,10 +9,6 @@ router.get('/', async (req, res) => {
     // Task.find(function (err, tasks){
     //     console.log(tasks);
     // });
-
-    // res.json({
-    //     "status" : "API Works"
-    // });
 });
 
 router.get('/:id', async (req, res) => {
