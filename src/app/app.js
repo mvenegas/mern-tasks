@@ -123,7 +123,7 @@ class App extends Component {
                 {/* TODO: Luego cambiar por rutas */}
                 <nav className="light-blue darken-4">
                     <div className="container">
-                        <a className="brand-logo" href="/">MERN-Contact list</a>                        
+                        <a className="brand-logo" href="/">Contact List (Demo MERN)</a>                        
                     </div>
                 </nav>
 
